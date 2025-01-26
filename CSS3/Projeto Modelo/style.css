@@ -1,0 +1,36 @@
+body{
+    background-image: url(imagens/fundo.png);
+    width: 900px;
+}
+
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(120, 104, 84);
+}
+a{
+    padding: 10px;
+    text-decoration: none;
+}
+.menu{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: rgb(201, 190, 177);
+    color: rgb(49, 49, 78);
+}
+.conteudo{
+    background-color: rgb(255, 249, 224);
+    padding: 10px;
+}
+.rodape{
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+.borda{
+    width: 640px;
+    padding: 10px;
+    background-color:  rgb(201, 190, 177);
+    
+}
