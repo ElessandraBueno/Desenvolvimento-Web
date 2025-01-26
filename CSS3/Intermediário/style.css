@@ -1,0 +1,25 @@
+/*Modelo de caixa*/
+.conteudo{
+    border: 1px solid red;
+    /*padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;*/
+    /*a ordem do padding é superior, direita, inferior, esquerda (sentido horário)
+    
+    OBS: se adicionar apenas 2 valores, o primeiro será aplicado no topo e  em baixo e o segundo valor na esquerda e direita
+    */
+    /*padding: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;*/
+
+
+    width: 150px;
+}
+.conteudo2{
+    margin: 30px;
+    width: 150px;
+    border: 1px solid red;
+}
