@@ -4,13 +4,20 @@
         <meta charset="UTF-8">
         <title>Elementos flutuantes</title>
         <style type="text/css">
+            #principal{
+                border: 5px solid rebeccapurple;
+                background-color: rgb(136, 192, 192);
+            }
             .conteudo{
                 background: gray;
-                border: 1px solid blue;
+                border: 1px solid rgb(255, 0, 0);
                 width: 150px;
                 height: 150px;
                 margin: 10px;
-                float: right;
+                float: left;
+            }
+            .clearcontent{
+                clear: both;
             }
             /*.conteudo1{
                 background: darkcyan;
@@ -18,12 +25,12 @@
                 width: 100px;
                 height: 100px;
                 float: left;
-            }*/
+            }
             .conteudo2{
-                background-color: lightcoral;
+                background-color: rgb(143, 178, 30);
                 border: 1px solid red;
                 width: 100px;
-                height: 100px;
+                height: 500px;
                 margin: 10px;
                 float: left;
             }
@@ -31,38 +38,39 @@
                 background-color: lightcoral;
                 border: 1px solid red;
                 width: 100px;
-                height: 200px;
+                height: 300px;
                 margin: 10px;
-                float: left;
-            }
-            .clearcontent{
-                clear: both;
-            }
+                
+            }*/
         </style>
     </head>
     <body>
-        <div class="conteudo">
-           Content 1
-        </div>
-        <div class="conteudo">
-            Content 2
-        </div>
-        <div class="conteudo">
-            Content 3
-        </div>
+        <div id="principal">
+            <div class="conteudo">
+                Floating to the left 1
+            </div>
+            <div class="conteudo">
+                Floating to the left 2
+            </div>
+            <div class="conteudo">
+                Floating to the left 3
+            </div>
 
-        <div class="conteudo3">
-            Content 4
+            <!--<div class="conteudo3">
+                Não flutua
+            </div>
+            <div class="conteudo2">
+                Esquerda
+            </div>
+            <div class="conteudo2">
+                Esquerda 2
+            </div>
+            <div class="conteudo3">
+                Não flutua
+            </div>
+            -->
+
+            <div class="clearcontent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci dolor quidem animi! Rem incidunt corrupti nisi vero, quis dicta quia inventore nesciunt libero vel hic ab neque architecto corporis. Quae!</div>
         </div>
-        <div class="conteudo2">
-            Content 5
-        </div>
-        <div class="conteudo3">
-            Content 6
-        </div>
-        <p class="clearcontent">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore neque reiciendis beatae reprehenderit sunt quo nihil asperiores praesentium suscipit cupiditate odit cumque placeat ea quibusdam, magnam qui non obcaecati.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magnam asperiores veniam quidem corporis enim magni cum, fugiat adipisci, perspiciatis animi molestias rem officia tempore repudiandae. Incidunt rem error minima!
-        </p>
     </body>
 </html>
