@@ -22,7 +22,6 @@ body{
     width: 920px;
     margin: 0 auto;
     padding: 15px;
-    background-color: aqua;
 }
 #postagens{
     width: 660px;
@@ -30,8 +29,8 @@ body{
 }
 #lateral{
     width: 240px;
-    background: orange;
     float: right;
+
 }
 #rodape{
     clear: both;
@@ -43,6 +42,17 @@ body{
     padding: 20px ;
     margin-bottom: 20px;
     background: white;
+}
+.conteudo-lat{
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+.post-lat{
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px dotted #CCC;
 }
 
 /*Formatação do menu*/
@@ -72,6 +82,11 @@ h1{
 }
 h2{
     color: #f7b600;
+}
+h3{
+    color: #565656;
+    background: #CCC;
+    padding: 5px;
 }
 .branco{
     color: white;
