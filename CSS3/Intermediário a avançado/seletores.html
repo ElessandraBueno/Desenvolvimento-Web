@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Seletores</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="cabecalho">
+            <h1>Título H1 formatado por ID</h1>
+        </div>
+
+        <div>
+            Esta página está formatada com font-family incluído pelo seletor universal *{}, onde todo o conteúdo receberá essa formatação.
+        </div>
+
+        <div class="cor">
+            <h2>Este título é formatado pelo seletor de propriedade H2{background} e pelo seletor de classe .cor{marrom}</h2>
+            <p class="cor">
+                Este paragráfo está sendo formatado pela classe p.cor{background}. Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            </p>
+        </div>
+
+        <ul>
+            Lista formatada
+            <li>
+                <a href="">Link 1</a>
+            </li>
+            <li>
+                <a href="">Link 2</a>
+            </li>
+            Lista que não recebe formatação pelo fato do elemento 'a' não ser filho
+            <li>
+                <span>
+                    <a href="">Link 3</a>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <a href="">Link 4</a>
+                </span>
+            </li>
+        </ul>
+        <a href="">Link fora da lista formatada</a>
+
+    </body>
+</html>

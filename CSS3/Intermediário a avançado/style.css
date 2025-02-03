@@ -1,0 +1,29 @@
+/*Seletor universal - engloba todos os elementos da página*/
+*{
+    /*border: 1px dotted gray;*/
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Seletor de texto*/
+h2{
+    background-color: bisque;
+}
+
+/*Seletor de classe*/
+.cor{
+    color: brown;
+}
+p.cor{
+    background-color: rgb(193, 188, 188);
+}
+
+/*Seletor ID*/
+#cabecalho{
+    color: rgb(7, 7, 179);
+}
+
+/*Seletor de filho*/
+li>a{
+    text-decoration: none;
+    color: orange;
+}
