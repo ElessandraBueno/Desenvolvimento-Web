@@ -38,9 +38,15 @@ p a{
 h3+p{
     color: green;
 }
-
-
+/*Seletor de irmão geral - seleciona todos os elementos após o irmão usado como referência, ou seja, eles precisam estar dentro do mesmo container pai, mas apenas os elementos que estão descritos após o irmão que é referência serão formatados*/
+h1~p{
+    color: blue;
+}
 
 .borda{
     border: 1px solid black;
+}
+body{
+    width: 920px;
+    margin: 0 auto;
 }
