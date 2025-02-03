@@ -22,8 +22,25 @@ p.cor{
     color: rgb(7, 7, 179);
 }
 
-/*Seletor de filho*/
+/*Seletor de filho - seleciona todos os elementos X que são filhos diretos de Y, ou seja, não pode ter outros elementos entre eles*/
 li>a{
     text-decoration: none;
     color: orange;
+}
+
+/*Seletor descendente - seleciona todos os elementos X que estão dentro de Y, mesmo que haja outros elementos entre eles */
+p a{
+    text-decoration: none;
+    color: red;
+}
+
+/*Seletor de irmão adjacente - seleciona apenas o primeiro elemento X depois do elemento Y especificado como referência*/
+h3+p{
+    color: green;
+}
+
+
+
+.borda{
+    border: 1px solid black;
 }

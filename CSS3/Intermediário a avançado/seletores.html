@@ -15,14 +15,14 @@
         </div>
 
         <div class="cor">
-            <h2>Este título é formatado pelo seletor de propriedade H2{background} e pelo seletor de classe .cor{marrom}</h2>
+            <h2>Título H2 fromatado pelo seletor de classe</h2>
             <p class="cor">
-                Este paragráfo está sendo formatado pela classe p.cor{background}. Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Este parágrafo está sendo formatado pela classe p.cor{background}. Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
             </p>
         </div>
 
-        <ul>
-            Lista formatada
+        <ul class="borda">
+            Lista formatada pelo seletor de <strong>filho</strong>
             <li>
                 <a href="">Link 1</a>
             </li>
@@ -41,7 +41,22 @@
                 </span>
             </li>
         </ul>
-        <a href="">Link fora da lista formatada</a>
+        <a href="">Link fora da lista formatada pelo seletor filho</a><br><br>
+        
+        <div class="borda">
+            O link do parágrafo está formatado pelo seletor <strong>descendente</strong>
+            <p>Este parágrafo é apenas um teste de formatação...
+                <span>
+                    <a href>Leia mais</a> 
+                </span> 
+            </p>
+        </div>
+            
+        <div>
+            <h3>Título H3 usado como referência para o parágrago abaixo</h3>
+            <p>Este parágrafo está formatado pelo seletor de <strong>irmão adjacente</strong> tendo como referência o H3 acima.</p>
+            <p>Este parágrafo <strong>não</strong> está sendo formatado, pois o seletor de irmão adjacente só engloba o primeiro elemento.</p>
+        </div>
 
     </body>
 </html>
