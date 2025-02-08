@@ -13,7 +13,16 @@ ul a{
     text-indent: 40px;
     background: #f7b600 url(imagens/men.png) no-repeat left bottom;
 }
-a:hover, .selecionado a{
+a:hover{
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+#home .home a,
+#sobre .sobre a,
+#servicos .servicos a,
+#noticias .noticias a,
+#contato .contato a{
     background-position: right bottom;
     background-color: #f99200;
     color: #fff;
