@@ -29,3 +29,6 @@ ul #atual{
 ul #atual a{
     background: url(imagens/aba-esquerda-atual.png) no-repeat top left;
 }
+.clear_content{
+    clear: both;
+}
