@@ -3,6 +3,7 @@ body{
     background: #f2f2f2;
 }
 #container{
+    border: 1px solid red;
     width: 960px;/*720px*/
     margin: 0 auto;
     background: #fff url(imagens/coluna.png) repeat-y left top;
@@ -21,7 +22,7 @@ body{
     float: right;
 }
 #principal{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 63%; /*320px*/
     float: left;
 }
@@ -58,7 +59,7 @@ body{
     padding: 5px;
 }
 img.img-noticia{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 94%;
     padding: 2%;
     max-width: 600px;
