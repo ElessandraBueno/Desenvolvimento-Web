@@ -62,3 +62,36 @@ body.fotosclass #naveg a#fotos
     background: #de003e;
     cursor: text;
 }
+/*Layout do conteúdo*/
+#conteudo{
+    background: #e98080;
+    margin-top:  60px;
+}
+#primario{
+    width: 270px;
+    margin: 0 0 20px 195px;
+    float: left;
+    background: blueviolet;
+}
+#secundario{
+    width: 270px;
+    margin: 0 0 20px 15px;
+    float: left;
+    background: green;
+}
+#lateral{
+    width: 180px;
+    margin: 0 0 20px -750px;
+    float: left;
+    background: yellow;
+}
+#content-rodape{
+    clear: both;
+    background: #294c71;
+    padding: 20px;
+}
+#rodape{
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+}
