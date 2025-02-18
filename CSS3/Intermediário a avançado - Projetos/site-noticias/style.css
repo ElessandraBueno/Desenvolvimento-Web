@@ -67,6 +67,24 @@ body.fotosclass #naveg a#fotos
     background: #e98080;
     margin-top:  60px;
 }
+#lateral{
+    width: 180px;
+    margin: 0 0 20px -750px;
+    float: left;
+    background: yellow;
+}
+#tres-col #primario{
+    width: 270px;
+    margin: 0 0 20px 195px;
+    float: left;
+    background: blueviolet;
+}
+#duas-col #primario{
+    width: 555px;
+    margin: 0 0 20px 195px;
+    float: left;
+    background: blueviolet;
+}
 #primario{
     width: 270px;
     margin: 0 0 20px 195px;
@@ -79,12 +97,7 @@ body.fotosclass #naveg a#fotos
     float: left;
     background: green;
 }
-#lateral{
-    width: 180px;
-    margin: 0 0 20px -750px;
-    float: left;
-    background: yellow;
-}
+
 #content-rodape{
     clear: both;
     background: #294c71;
