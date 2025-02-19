@@ -95,6 +95,7 @@ body.fotosclass #naveg a#fotos
     float: left;
     background: blueviolet;
 }*/
+
 /*Caixas*/
 .caixa{
     margin: 10px 0;
@@ -144,7 +145,26 @@ input.submit{
     border: 2px solid #870529;
     padding: 5px;
 }
-
+/*Imagens*/
+img.img-principal{
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;
+}
+.destaque h3{
+    background: #b10333;
+    color: #fff;
+}
+.entrevista h3{
+    background: #de003e;
+    color: #f8acac;
+}
+/*Rodapé*/
 #content-rodape{
     clear: both;
     background: #294c71;
