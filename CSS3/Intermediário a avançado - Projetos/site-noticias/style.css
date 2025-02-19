@@ -71,33 +71,30 @@ body.fotosclass #naveg a#fotos
     width: 180px;
     margin: 0 0 20px -750px;
     float: left;
-    background: yellow;
-}
-#tres-col #primario{
-    width: 270px;
-    margin: 0 0 20px 195px;
-    float: left;
-    background: blueviolet;
-}
-#duas-col #primario{
-    width: 555px;
-    margin: 0 0 20px 195px;
-    float: left;
-    background: blueviolet;
 }
 #primario{
     width: 270px;
     margin: 0 0 20px 195px;
     float: left;
-    background: blueviolet;
 }
 #secundario{
     width: 270px;
     margin: 0 0 20px 15px;
     float: left;
-    background: green;
 }
-
+#uma-col #primario{
+    width: 750px;
+    margin: 0 0 20px 0;
+}
+#duas-col #primario{
+    width: 555px;
+}
+/*#tres-col #primario{
+    width: 270px;
+    margin: 0 0 20px 195px;
+    float: left;
+    background: blueviolet;
+}*/
 #content-rodape{
     clear: both;
     background: #294c71;
@@ -107,4 +104,21 @@ body.fotosclass #naveg a#fotos
     width: 750px;
     margin: 0 auto;
     color: #fff;
+}
+/*Caixas*/
+.caixa{
+    margin: 10px 0;
+    padding: 5px;
+    background: #f3f3f3 url(imagens/fundo-caixa.png);
+}
+.caixa-content{
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+h2{
+    font-size: 1em;
+    background: #294c71;
+    color: #fff;
+    padding: 5px;
 }
