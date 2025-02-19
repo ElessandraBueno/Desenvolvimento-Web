@@ -95,16 +95,6 @@ body.fotosclass #naveg a#fotos
     float: left;
     background: blueviolet;
 }*/
-#content-rodape{
-    clear: both;
-    background: #294c71;
-    padding: 20px;
-}
-#rodape{
-    width: 750px;
-    margin: 0 auto;
-    color: #fff;
-}
 /*Caixas*/
 .caixa{
     margin: 10px 0;
@@ -121,4 +111,47 @@ h2{
     background: #294c71;
     color: #fff;
     padding: 5px;
+}
+/*Menu lateral*/
+#lateral ul a{
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+#lateral ul a:hover{
+    padding-left: 20px;
+    background: #f9f9f9 url(imagens/marcador.png) no-repeat left center;
+    color: #a1a1a1;
+}
+label{
+    display: block;
+    cursor: pointer;
+}
+input{
+    padding: 5px;
+    width: 125px;
+    font-size: 0.9em;
+    background: #fff;
+}
+input.submit{
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+    padding: 5px;
+}
+
+#content-rodape{
+    clear: both;
+    background: #294c71;
+    padding: 20px;
+}
+#rodape{
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
 }
