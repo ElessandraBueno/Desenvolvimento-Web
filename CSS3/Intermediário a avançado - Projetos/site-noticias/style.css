@@ -164,6 +164,31 @@ h3{
     background: #de003e;
     color: #f8acac;
 }
+#lista-not li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+}
+#lista-not li a img{
+    float: left;
+    margin: 5px;
+}
+#lista-not li a {
+    text-decoration: none;
+}
+#lista-not li a h3{
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
+}
+#lista-not li a p{
+    font-size: 0.7em;
+}
+#lista-not li:hover{
+    background: #eee;
+    cursor: pointer;
+}
+
 /*Rodapé*/
 #content-rodape{
     clear: both;
