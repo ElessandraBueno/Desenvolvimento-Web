@@ -5,10 +5,11 @@
         <title>Notícias cidade - Seu site de notícias</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-    <body class="ecoclass">
+    <body id="duas-col" class="ecoclass">
         
-        <div id="container">
-            <div id="topo">
+        <div id="container"><!--Início container-->
+
+            <div id="topo"><!--Início topo-->
 
                 <h1 class="logo">Notícias cidade</h1>
                 <ul id="naveg">
@@ -35,6 +36,102 @@
                     </li>
                 </ul>
                 
+            </div><!--Fim topo-->
+
+            <div id="conteudo"><!--Início conteúdo-->
+
+                <div id="primario"><!--Início principal-->
+            
+                   <div class="caixa destaque">
+                        <h2>Destaque</h2>
+                        <div class="caixa-content">
+                            <h3>Nova legislação</h3>
+                            <img class="img-principal" src="imagens/taxi.jpg" width="100%">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="">Leia mais</a>
+                        </div>
+                   </div> 
+
+                   <div class="caixa">
+                        <h2>Mundo</h2>
+                        <div class="caixa-content">
+                            <ul id="lista-not">
+                                <li>
+                                    <a href="">
+                                        <img src="imagens/tecnologia.jpg" width="80">
+                                        <h3>Novas tecnologias!</h3>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="imagens/tecnologia.jpg" width="80">
+                                        <h3>Novas tecnologias!</h3>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="imagens/tecnologia.jpg" width="80">
+                                        <h3>Novas tecnologias!</h3>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="imagens/tecnologia.jpg" width="80">
+                                        <h3>Novas tecnologias!</h3>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit...</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                   </div> 
+
+                </div><!--Fim principal-->
+
+
+                <div id="lateral"> <!--Início lateral-->
+
+                    <div class="caixa">
+                        <h2>Entrevistas</h2>
+                        <div class="caixa-content">
+                            <ul>
+                                <li><a href="">José Almeida</a></li>
+                                <li><a href="">Felipe Silva</a></li>
+                                <li><a href="">Renato Rodrigues</a></li>
+                                <li><a href="">Abelardo Silveira</a></li>
+                                <li><a href="">André Carlos</a></li>
+                                <li><a href="">Márcio Mello</a></li>
+                                <li><a href="">João Pedro</a></li>
+                                <li><a href="">Fernando Weiss</a></li>
+                            </ul>
+                        </div>
+                        <div class="caixa">
+                            <h2>News</h2>
+                            <div class="caixa-content">
+                                <form>
+                                    <div>
+                                        <label for="email">Email:</label>
+                                        <input type="text" name="email" id="email" placeholder="E-mail">
+                                    </div>
+                                    <div>
+                                        <input class="submit" type="submit" value="Cadastrar">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!--Fim lateral-->
+
+            </div><!--Fim conteúdo-->
+
+        </div><!--Fim container-->
+
+        <div id="content-rodape">
+            <div id="rodape">
+                &copy; Copyright 2000-2018 Notícias cidade
             </div>
         </div>
 
