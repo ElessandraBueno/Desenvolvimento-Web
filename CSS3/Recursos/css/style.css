@@ -20,3 +20,13 @@
     height: 300px;
     background: #c97341;
 }
+#caixa-deg{
+    width: 300px;
+    height: 300px;
+    /* background: url(../imagens/camera.png); */
+    /* background: linear-gradient(96deg , #ccc,rgb(244, 150, 135)); */
+    background: radial-gradient(rgb(251, 164, 164), rgb(250, 242, 242));
+}
+#caixa-deg h1{
+    /* background: rgb(255, 255, 255, 0.5); */
+}
