@@ -10,4 +10,31 @@ nav{
 }
 footer{
     background: #ccc;
+    padding: 5px;
+    text-align: center;
+}
+article{
+    width: 75%;
+    height: 330px;
+    background: #ab5656;
+    color: white;
+    padding: 10px;
+    float: left;
+}
+section{
+    border: 2px dotted #fff;
+    
+}
+section span{
+    font-size: 0.8em;
+}
+aside{
+    width: 21%;
+    height: 330px;
+    padding: 10px;
+    background: #977373;
+    float: right;
+}
+.cl{
+    clear: both;
 }
