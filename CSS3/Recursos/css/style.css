@@ -1,3 +1,4 @@
+/*Border radius e Box sizing*/
 #caixa{
     width: 300px;
     height: 300px;
@@ -20,6 +21,9 @@
     height: 300px;
     background: #c97341;
 }
+
+/*Degradês*/
+
 #caixa-deg{
     width: 300px;
     height: 300px;
@@ -27,9 +31,13 @@
     /* background: linear-gradient(96deg , #ccc,rgb(244, 150, 135)); */
     background: radial-gradient(rgb(251, 164, 164), rgb(250, 242, 242));
 }
+
 #caixa-deg h1{
     /* background: rgb(255, 255, 255, 0.5); */
 }
+
+/*Sombras*/
+
 #caixa-somb{
     width: 300px;
     height: 300px;
@@ -38,8 +46,59 @@
     background: #009670;
     box-shadow: 10px 10px 10px rgb(93, 89, 89);
 }
+
 #caixa-somb h1{
     color: white;
     /*text-shadow: -2px 5px #504c4c;*/
     text-shadow: 2px 5px 5px rgb(0, 0, 0, 0.8);
+}
+
+/*Animações*/
+
+@keyframes animacao-caixa {
+    from{ /*Estado inicial*/
+        background: #7fbdd2;
+        border-radius: 0px;
+        top: 0;
+        left: 0;
+    }
+    to{ /*Estado final*/
+        background: #033239;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+/*@-webkit-keyframes animacao-caixa {
+    from{ 
+        background: #7fbdd2;
+    }
+    to{ 
+        background: #03390b;
+    }
+}
+@-moz-keyframes animacao-caixa {
+    from{ 
+        background: #7fbdd2;
+    }
+    to{ 
+        background: #03390b;
+    }
+}*/
+
+#caixa-anim{
+    width: 300px;
+    height: 300px;
+    background: rgb(127, 189, 210);
+    animation-name: animacao-caixa;
+    /* -webkit-animation-name: animacao-caixa;
+    -moz-animation-name: animacao-caixa; */
+    animation-duration: 2s;
+    /*animation-delay: 3s;*/
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    position: relative;
+    /*tudo em uma propriedade só*/
+    /* animation: animacao-caixa 2s 2 alternate; */
 }
