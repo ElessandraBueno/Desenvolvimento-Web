@@ -64,9 +64,22 @@
     }
     to{ /*Estado final*/
         background: #033239;
-        border-radius: 300px;
+        border-radius: 500px;
         top: 200px;
-        left: 200px;
+    }
+}
+@keyframes animacao-caixa2 {
+    from{ /*Estado inicial*/
+        background: #d57f7f;
+        border-radius: 0px;
+        top: 50px;
+        left: 0px;
+    }
+    to{ /*Estado final*/
+        background: #7b0707;
+        border-radius: 500px;
+        
+        left: 600px;
     }
 }
 
@@ -101,4 +114,26 @@
     position: relative;
     /*tudo em uma propriedade só*/
     /* animation: animacao-caixa 2s 2 alternate; */
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#caixa-anim2{
+    width: 200px;
+    height: 200px;
+    background: #d57f7f;
+    animation-name: animacao-caixa2;
+    /* -webkit-animation-name: animacao-caixa;
+    -moz-animation-name: animacao-caixa; */
+    animation-duration: 2s;
+    /*animation-delay: 3s;*/
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    position: relative;
+    /*tudo em uma propriedade só*/
+    /* animation: animacao-caixa 2s 2 alternate; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
