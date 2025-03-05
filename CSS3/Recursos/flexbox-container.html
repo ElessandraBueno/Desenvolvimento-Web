@@ -8,6 +8,8 @@
             #conteudo{
                 background: #dcdcdc;
                 height: 400px;
+                /* display: -webkit-box;
+                display: -ms-flexbox; */
                 display: flex;
                 /*row | row-reverse | column | column-reverse*/
                 flex-direction: row;
@@ -21,11 +23,15 @@
             .item{
                 background: white;
                 border: 1px solid gray;
-                width: 100px;
+                /* width: 200px; */
                 height: 100px;
                 margin: 10px;
                 /*Define a proporção de espaço ocupado por um item*/
                 flex-grow: 0;
+                /*Define a capacidade de redução de tamanho do item*/
+                flex-shrink: 1;
+                /*Indica o tamanho inicial do flex item antes da distribuição do espaço restante*/
+                flex-basis: 50px;
             }
             /* .ordem1{
                 order: 1;
@@ -40,10 +46,12 @@
                 order: 4;
             } */
             .item1{
-                flex-grow: 1;
+                /* flex-grow: 1; */
+                /* flex-shrink: 1; */
             }
             .item2{
-                flex-grow: 2;
+                /* flex-grow: 2; */
+                /* flex-shrink: 2; */
             }
         </style>
     </head>
