@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Bootstrap4 - Alinhamento de textos</title>
+
+  </head>
+  <body style="margin-bottom: 200px; padding: 16px;">
+
+    <!-----Parágrafo justificado----->
+    <p class="text-justify">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptatem mollitia corporis optio maiores, eaque dolorum aliquam totam nemo iste non sit officia explicabo qui magnam, ipsa facilis quam illum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, ea consectetur minus mollitia fugiat, neque deleniti saepe ipsam eligendi rem enim. Vel laborum perferendis quia. Ipsa quisquam maiores a ea!
+    </p>
+    <br><br>
+
+    <!-- 
+        Alinhamento responsivo - 
+        class text-<tela>-<alinhamento> 
+            tela: sm, md, lg, xl
+            alinhamento: left, center, right
+    -->
+    <p class="text-sm-right">tela &gt;= 576px</p><!--SMALL-->
+    <p class="text-md-center">tela &gt;= 768px</p><!--MEDIUM-->
+    <p class="text-lg-right">tela &gt;= 992px</p><!--LARGE-->
+    <p class="text-xl-center">tela &gt;= 1200px</p><!--EXTRA LARGE-->
+    <br><br>
+
+    <!------Elemento Block para Inline------>
+    <h1 class="bg-success d-inline">Block para Inline</h1>
+    <p class="bg-success">
+        Block - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, deserunt rem quia animi pariatur numquam, possimus.
+    </p>
+    <br><br>
+
+    <!--------Inline para Block------->
+    <span class="bg-success d-block">Inline para Block 1</span>
+    <span class="bg-success">Inline</span>
+    <br><br>
+
+    <!------Elemento Inline-Block------>
+    <div class="bg-warning">
+        <h3 class="bg-success d-inline-block">Inline-Block</h3>
+        <h3 class="bg-success d-inline-block" 
+        style="margin-top:50px; width: 400px;">Lorem ipsum dolor</h3>
+    </div>
+    
+
+
+    
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" 
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
