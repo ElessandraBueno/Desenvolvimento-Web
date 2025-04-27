@@ -2,3 +2,15 @@
     background: #ffc107;
     color: white;
 }
+.caixa{
+    padding: 60px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+footer p a{
+    text-decoration: none;
+    border-radius: 5px;
+}
+footer p a:hover{
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.1);
+}
