@@ -8,11 +8,24 @@
         var var1 = prompt('Digite algum número: ')
         var var2 = prompt('Digite outro número: ')
 
+        document.write('os valores concatenados: '+ var1 + var2) //concatena os valores
+        document.write('</br>')
+
+        // o parseInt transforma o input do prompt em valor númerico
         var1 = parseInt(var1)
-        var2 = parseInt(var2)
+        // o parseFloat transforma o input do prompt em valor númerico com ponto flutuante
+        var2 = parseFloat(var2)
 
         console.log(var1)
-        console.log2(var2)
+        console.log(var2)
+
+        var num1 = 10
+        var num2 = 20
+
+        document.write('a soma dos valores declarados no código: '+ (num1 + num2)) //soma os valores por terem sido declarados como numéricos
+        document.write('</br>')
+        
+        //o toString concatena valores declarados como numéricos que deveriam ser somados
         document.write(var1.toString() + var2.toString())
     </script>
 </head>
