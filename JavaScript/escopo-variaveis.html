@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+
+       //3 ESCOPOS: global, função e bloco
+        //*********GLOBAL*********
+       var a = 'Ana'
+       if(true){
+        document.write(a)
+       }//dentro do escopo de bloco, tem acesso ao uso de variáveis globais
+
+       document.write('</br>')
+
+       function x(){
+        document.write(a)
+       }
+       x()//dentro do escopo de função, também é possível acessar variáveis globais
+
+       document.write('</br>')
+
+       //**********BLOCO*********
+       if(true){
+        var b = 'Bea'
+       }//a declaração de variáveis VAR dentro do escopo de bloco, se tornam globais e podem ser acessadas fora do escopo
+       document.write(b)
+
+       document.write('</br>')
+
+       function y(){
+        document.write(b)
+       }//a variável VAR que foi declarada dentro do escopo de bloco também pode ser acessada dentro da função, pois é considerada global por ter sido declarada como VAR
+       y()
+
+       document.write('</br>')
+
+       //********FUNÇÃO*******
+       function z(){
+        var c = 'Carol'
+        document.write(c)
+       }//variáveis declaradas dentro de funções, não podem ser acessadas fora dela
+       z()
+       document.write(c)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
