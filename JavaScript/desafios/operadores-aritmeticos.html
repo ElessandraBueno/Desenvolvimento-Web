@@ -16,6 +16,27 @@
         document.write('O módulo é: '+ (num1 % num2)+'</br>')
         document.write('O pré-incremento de '+num1+' é: '+ (++num1)+'</br>')
         document.write('O pós-incremento de '+num1+' é: '+ (num1++)+'</br>')
+
+        //Operação aritmética na atribuição de valores
+        var teste = 10
+
+        teste = teste + 5
+        document.write('A var teste + 5 = '+teste+'</br>')
+        teste +=3 //atribui a teste o valor dele mesmo + 3 (como na outra atribuição acima)
+        document.write('A var teste + 3 = '+teste+'</br>')
+        teste -= 5
+        document.write('A var teste - 5 = '+teste+'</br>')
+        teste *= 2
+        document.write('A var teste * 2 = '+teste+'</br>')
+        teste /= 2
+        document.write('A var teste / 2 = '+teste+'</br>')
+        teste %= 2
+        document.write('O módulo da var teste = '+teste+'</br>')
+
+        var testeString = 'Ana'
+        testeString += ' Beatriz' //irá concatenar com o valor atual da variável
+        document.write(testeString)
+
     </script>
 </head>
 <body>
