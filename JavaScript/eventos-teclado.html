@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        
+        function acao1(){
+            alert('Evento disparado')
+        }
+
+    </script>
+</head>
+<body>
+    
+    <!--Onkeydown - sempre que alguma tecla (do teclado) for pressionada, porém só exibe a informação após a execução da ação/função-->
+    <input onkeydown="acao1()" type="text" placeholder="onkeydown">
+
+    <!--Onkeyup - após o clique de alguma tecla e se for caractere, mostra ela na tela e só depois executa a ação/função-->
+    <input onkeyup="acao1()" type="text" placeholder="onkeyup">
+
+    <!--Onkeypress - sempre que alguma tecla que represente caracteres for pressionada. Teclas que não sejam de caractere como o Ctrl, não funciona como nas opções anteriores-->
+    <input onkeypress="acao1()" type="text" placeholder="onkeypress">
+
+</body>
+</html>
+
