@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        
+        
+
+    </script>
+</head>
+<body>
+    
+    <!--Onfocus - sempre que o elemento recebe foco (quando o mouse clica no input, por exemplo)-->
+    <input onfocus="console.log('Onfocus disparado - recebeu o foco')" type="text" placeholder="Onfocus">
+
+    <!--Onblur - sempre que o elemento perde o foco (quando o mouse que antes estava dentro no input, passa a ter o clique fora, por exemplo)-->
+    <input onblur="console.log('Onblur disparado - perdeu o foco')" type="text" placeholder="Onblur">
+
+    <!--Onchange - sempre que o estado da seção for modificado-->
+    <select onchange="console.log('Onchange disparado - o estado foi modificado')">
+        <option value="">--Selecione--</option>
+        <option value="1">Primeira opção</option>
+        <option value="2">Segunda opção</option>
+    </select>
+
+</body>
+</html>
+
