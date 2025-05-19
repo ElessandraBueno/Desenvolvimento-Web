@@ -17,7 +17,67 @@
         //Método que informa o ano atual conforme a máquina
         document.write(data.getFullYear()+'</br>')
 
-        document.write(data.getDate()+'/'+data.getMonth()+'/'+data.getFullYear())
+        document.write(data.getDate()+'/'+data.getMonth()+'/'+data.getFullYear()+'</br></br></br>')
+
+
+        //Adicionar ou remover DIAS
+        document.write('Alterando DIAS </br>'+data.toString()+'</br>')
+        data.setDate(data.getDate() + 1)//SetDate manipula os dias, mas é necessário utilizar o getDate para buscar a informação de qual o dia atual e depois adicionar/remover com base nisso
+        document.write(data.toString()+'</br>')
+
+        data.setDate(data.getDate() - 1)
+        document.write(data.toString()+'</br></br><hr/></br>')
+
+
+        //Adicionar ou remover MESES
+        document.write('Alterando MESES </br>'+data.toString()+'</br>')
+        data.setMonth(data.getMonth() + 1)//SetDate manipula os dias, mas é necessário utilizar o getDate para buscar a informação de qual o dia atual e depois adicionar/remover com base nisso
+        document.write(data.toString()+'</br>')
+
+        data.setMonth(data.getMonth() - 2)
+        document.write(data.toString()+'</br></br><hr/></br>')
+
+        ////Adicionar ou remover ANOS
+        document.write('Alterando ANOS </br>'+data.toString()+'</br>')
+        data.setFullYear(data.getFullYear() + 1)//SetDate manipula os dias, mas é necessário utilizar o getDate para buscar a informação de qual o dia atual e depois adicionar/remover com base nisso
+        document.write(data.toString()+'</br>')
+
+        data.setFullYear(data.getFullYear() - 2)
+        document.write(data.toString()+'</br></br><hr/></br>')
+
+        //Calculando dias entre duas datas
+        //19/05/2025
+        var data1 = new Date(2025, 3, 19)
+
+        //19/04/2025
+        var data2 = new Date(2025, 4, 19)
+
+        document.write('Calculando diferença de dias entre datas </br>')
+        document.write(data1.toString()+'</br>')
+        document.write(data2.toString()+'</br>')
+
+        //1º Converter datas para tipo que possa ser calculado
+        //getTime recupera a quantidade de milisegundos de 01/01/1970 (data de padrão computacional) até a data utilizada
+        document.write(data1.getTime()+'</br>')
+        document.write(data2.getTime()+'</br>')
+
+        //2º Encontrar a quantidade de milisegundos entre a data1 e data2
+        var milisegundos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+        document.write(milisegundos_entre_datas+'</br>') //Math.abs transforma um valor em absoluto
+
+        //3º Entender quantos milisegundos tem 1 dia
+        /*
+        1 dia - 24h
+        1 hora - 60m
+        1 minuto - 60s
+        1 segundo - 1000ms
+        */
+       //Cálculo para descobrir quantos milisegundos tem 1 dia
+        var milisegundos_dia = (1*24*60*60*1000)
+        document.write('1 dia tem: '+milisegundos_dia+' milisegundos </br> </br>')
+
+        //4º Quantos dias a diferença das datas em milisegundos equivale
+        document.write('A diferença entre data1 e data2 é de: '+ Math.ceil(milisegundos_entre_datas / milisegundos_dia) +' dias')
 
     </script>
 </head>
