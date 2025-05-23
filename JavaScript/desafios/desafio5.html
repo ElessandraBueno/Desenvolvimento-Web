@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <script>
+        function backgroundFoco(corFundo) {
+            document.getElementById('principal').style.background = corFundo
+        }
+
+        function perdeFoco(corFundo1, corFundo2){
+            var valor = document.getElementById('principal').value
+
+            if(valor.length < 3){
+                document.getElementById('principal').style.background = corFundo1
+            }else{
+                document.getElementById('principal').style.background = corFundo2
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input 
+    type="text" 
+    id="principal" 
+    onfocus="backgroundFoco('#d2d235')"
+    onblur="perdeFoco('#FF0000','#0ca172')">
+
+</body>
+
+</html>
+
+<!-- Crie um campo <input type="text"> e aplique os seguintes controles com base nos
+eventos abaixo:
+• No evento de foco modifique o background do input para amarelo.
+• Quando o campo perder o foco, recupere o seu respectivo valor e:
+o Caso o conteúdo contido no campo tenha menos de 3 caracteres o mesmo
+deve ter seu background alterado para vermelho.
+o Caso o conteúdo contido no campo tenha 3 caracteres ou mais o background
+deve ser alterado para verde -->
