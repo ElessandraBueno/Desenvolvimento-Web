@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+
+        var objetos = Array('cadeira', 'impressora', 'garfo')
+
+        function Adicionar(){
+            var valor = document.getElementById('campo_texto').value.toLowerCase()
+            valor.trim()
+
+            if(valor === ''){
+
+                alert('Informe um valor válido!')
+
+            }else if (valor !== ''){
+
+                if(objetos.includes(valor)){
+
+                    alert('Objeto já adicionado!')
+
+                }else{
+
+                    objetos.push(valor)
+                    console.log(objetos)
+                    document.getElementById('campo_texto').value = ''
+                }
+            }else{
+                alert('Informe um valor válido!')
+            }
+        }
+
+        function Ordenar(){
+            console.log(objetos.sort())
+        }
+    </script>
+</head>
+<body>
+    
+    <input type="text" id="campo_texto">
+    <button onclick="Adicionar()">Adicionar</button>
+    <button onclick="Ordenar()">Ordenar</button>
+</body>
+</html>
+<!-- 1) Crie uma aplicação web contendo um campo para entrada de texto (input text) e dois
+botões (buttons), sendo um botão com a descrição "Adicionar" e outro com a descrição
+"Ordenar", conforme imagem abaixo
+Após criar os elementos de interação com o usuário acima, crie um Array de nome objetos contendo
+os seguintes valores:
+var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+Os próximos passos são:
+A) Ao clicar no botão "Adicionar" disparar função que irá:
+• Recuperar o valor contido no campo de texto.
+• Verificar se o valor está vazio ou preenchido.
+o Se vazio, exibir alert com a mensagem "Informe um valor válido".
+o Se preenchido:
+▪ Verificar se o valor informado já existe dentro do Array objetos.
+▪ Se existir, exibir alert com a mensagem "Objeto já foi adicionado".
+▪ Se não existir:
+• Incluir o valor preenchido no campo dentro do Array.
+• Efetuar um console.log do Array para debug (checar se está
+funcionado).
+• Limpar o valor contido no campo de entrada de texto.
+B) Ao clicar no botão "Ordenar" disparar função que irá:
+• Ordenar de forma alfabética os valores do Array de objetos.
+• Efetuar um console.log do Array para debug (checar se está funcionado). -->
