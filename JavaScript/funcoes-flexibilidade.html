@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+
+        function testeFlexibilidade(){
+            var resultado = 0
+            for(var x in arguments){
+                console.log(arguments[x])
+                resultado += arguments[x]
+            }
+            return resultado
+        }
+        console.log(testeFlexibilidade(2, 3, 55))
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
