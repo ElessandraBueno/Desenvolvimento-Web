@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+
+        var listaFuncionarios = ['Viviane', 'Rosangela', 'Miguel', 'Lucas', 'Fernanda']
+
+        console.log(listaFuncionarios)
+
+        //O foreach só interpreta índices numéricos que sejam iguais ou maior a 0
+        listaFuncionarios.forEach(function(valor, indice, array){
+            console.log('Índice '+ indice + ' | valor: ' + valor)
+            
+            if(valor == 'Lucas'){
+                array[indice] = 'Novo valor'
+            }
+        })
+        console.log(listaFuncionarios+'\n\n\n')
+
+        //O foreach só interpreta índices numéricos que sejam iguais ou maior a 0
+        var listaFrutas = Array()
+        listaFrutas['x'] = 'Banana'
+        listaFrutas[false] = 'Uva'
+        listaFrutas[3] = 'Maçã'
+        listaFrutas[32] = 'Kiwi'
+        listaFrutas[-20] = 'Morango'
+
+        var f = function(valor, indice){
+            console.log(valor, indice)
+        }
+        listaFrutas.forEach(f)
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
