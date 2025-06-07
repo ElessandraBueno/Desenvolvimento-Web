@@ -11,8 +11,23 @@
 
 <body onresize="ajustaTamanhoPalcoJogo()">
 
+    <div class="painel">
+        <div class="estão entrando no cronometro ou nao:">
+            <img src="imagens/coracao_vazio.png" alt="">
+            <img src="imagens/coracao-vazio.png" alt="">
+            <img src="imagens/coracao_cheio cheio.png" alt="">
+        </div>
+
+        <div class="Tempo restante:">
+
+        </div>
+    </div>
+
     <script>
-        posicaoRandomica()
+
+        setInterval(function(){
+            posicaoRandomica()
+        }, 1000)
     </script>
     
 </body>
