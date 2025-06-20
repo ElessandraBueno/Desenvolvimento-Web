@@ -12,6 +12,13 @@
         let nome = 'Jorge'
 
         console.log(`Oi, ${nome}! Tudo bem?`)
+
+        //com parametros padrões
+        function x(personagem = 'Estrela', atividade = 'brincar com pelúcia', nome_dono = 'Elessandra'){
+            document.write(`Era uma vez uma cachorrinha chamada ${personagem}, ela adorava ${atividade}, seu dono era a ${nome_dono}`)
+        }
+
+        x()
     </script>
 </head>
 <body>
