@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <script type="text/babel">
+        
+        let quadrado = function(x){
+            return x * x
+        }
+        document.write(quadrado(3)+'</br>')
+
+        //reescrevendo o trecho acima com arrow function
+        let quadrado1 = (x) => {
+            return x * x
+        }
+        document.write(quadrado1(2)+'</br>')
+
+        //reescrevendo a arrow function acima
+        let quadrado2 = x => x * x //retorno implícito
+        document.write(quadrado2(6)+'</br>')
+
+        let parOuImpar = function(numero){
+            if(numero%2 === 0){
+                document.write(`${numero} é par`)
+            }else{
+                document.write(`${numero} é impar`)
+            }
+        }
+        parOuImpar(4)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
