@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+    <script>
+
+        //Software de marcenaria
+        //Cadeira e Sofá
+
+        //CADEIRA paradigma procedural
+        let qtd_pernas = 1
+        let giratoria = true
+        let cor = 'azul'
+
+        //Array - paradigma procedural
+        let cadeiras = Array()
+        cadeiras[0] = Array()
+        cadeiras[0]['qtd_pernas'] = 4
+        cadeiras[0]['giratoria'] = false
+        cadeiras[0]['cor'] = 'azul'
+
+        cadeiras[1] = Array()
+        cadeiras[1]['qtd_pernas'] = 1
+        cadeiras[1]['giratoria'] = true
+        cadeiras[1]['cor'] = 'vermelha'
+
+        console.log(cadeiras)
+
+        function girar_cadeira(indice){
+            if(cadeiras[indice]['giratoria'] === true){
+                console.log('girou')
+            }else{
+                console.log('cadeira não é giratória')
+            }
+        }
+
+        //Inclusão de cadeiras dentro do array
+        function add_cadeira(qtd_pernas, giratoria, cor){
+            let cadeira = Array()
+            cadeira['qtd_pernas'] = qtd_pernas
+            cadeira['giratoria'] = giratoria
+            cadeira['cor'] = cor
+
+            cadeiras.push(cadeira)
+        }
+
+        add_cadeira(3, false, 'preta')
+
+        console.log(cadeiras)
+
+        // girar_cadeira(1)
+
+        //Paradigma OO
+        class Cadeira{
+            constructor(qtd_pernas_cad, cad_giratoria, cor_cad){
+                this.qtd_pernas = qtd_pernas_cad
+                this.giratoria = cad_giratoria
+                this.cor = cor_cad
+            }
+
+            girarCadeira(){
+                if(this.giratoria === true){
+                    console.log('Girou')
+                }else{
+                    console.log('Não é giratória')
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
