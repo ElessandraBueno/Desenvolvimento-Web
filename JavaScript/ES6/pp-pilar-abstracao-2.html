@@ -10,45 +10,45 @@
         //Cadeira e Sofá
 
         //CADEIRA paradigma procedural
-        let qtd_pernas = 1
-        let giratoria = true
-        let cor = 'azul'
+        // let qtd_pernas = 1
+        // let giratoria = true
+        // let cor = 'azul'
 
-        //Array - paradigma procedural
-        let cadeiras = Array()
-        cadeiras[0] = Array()
-        cadeiras[0]['qtd_pernas'] = 4
-        cadeiras[0]['giratoria'] = false
-        cadeiras[0]['cor'] = 'azul'
+        // //Array - paradigma procedural
+        // let cadeiras = Array()
+        // cadeiras[0] = Array()
+        // cadeiras[0]['qtd_pernas'] = 4
+        // cadeiras[0]['giratoria'] = false
+        // cadeiras[0]['cor'] = 'azul'
 
-        cadeiras[1] = Array()
-        cadeiras[1]['qtd_pernas'] = 1
-        cadeiras[1]['giratoria'] = true
-        cadeiras[1]['cor'] = 'vermelha'
+        // cadeiras[1] = Array()
+        // cadeiras[1]['qtd_pernas'] = 1
+        // cadeiras[1]['giratoria'] = true
+        // cadeiras[1]['cor'] = 'vermelha'
 
-        console.log(cadeiras)
+        // console.log(cadeiras)
 
-        function girar_cadeira(indice){
-            if(cadeiras[indice]['giratoria'] === true){
-                console.log('girou')
-            }else{
-                console.log('cadeira não é giratória')
-            }
-        }
+        // function girar_cadeira(indice){
+        //     if(cadeiras[indice]['giratoria'] === true){
+        //         console.log('girou')
+        //     }else{
+        //         console.log('cadeira não é giratória')
+        //     }
+        // }
 
-        //Inclusão de cadeiras dentro do array
-        function add_cadeira(qtd_pernas, giratoria, cor){
-            let cadeira = Array()
-            cadeira['qtd_pernas'] = qtd_pernas
-            cadeira['giratoria'] = giratoria
-            cadeira['cor'] = cor
+        // //Inclusão de cadeiras dentro do array
+        // function add_cadeira(qtd_pernas, giratoria, cor){
+        //     let cadeira = Array()
+        //     cadeira['qtd_pernas'] = qtd_pernas
+        //     cadeira['giratoria'] = giratoria
+        //     cadeira['cor'] = cor
 
-            cadeiras.push(cadeira)
-        }
+        //     cadeiras.push(cadeira)
+        // }
 
-        add_cadeira(3, false, 'preta')
+        // add_cadeira(3, false, 'preta')
 
-        console.log(cadeiras)
+        // console.log(cadeiras)
 
         // girar_cadeira(1)
 
@@ -68,6 +68,18 @@
                 }
             }
         }
+
+        // let cadeira = new Cadeira(4, false, 'verde')
+        // let cadeira2 = new Cadeira(1, true, 'rosa')
+        // cadeira.girarCadeira()
+        // cadeira2.girarCadeira()
+
+        let cadeiraS = Array()
+        cadeiraS.push(new Cadeira(4, false, 'verde'))
+        cadeiraS.push( new Cadeira(1, true, 'rosa'))
+        console.log(cadeiraS)
+
+
     </script>
 </head>
 <body>
