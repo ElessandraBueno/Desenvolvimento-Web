@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ES6</title>
-    <script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
 
         class Animal {
-            constructor(){
+            constructor() {
                 this.cor = ''
                 this.tamanho = null
             }
 
-            dormir(){
+            dormir() {
                 console.log('dormir')
             }
         }
 
-        class Cachorro extends Animal{
+        class Cachorro extends Animal {
             constructor() {
                 super()
                 this.orelhas = 'Grandes e erguidas'
@@ -33,7 +35,7 @@
             }
         }
 
-        class Passaro extends Animal{
+        class Passaro extends Animal {
             constructor() {
                 super()
                 this.bico = 'Curto'
@@ -45,13 +47,13 @@
 
         }
 
-        class Papagaio extends Passaro{
-            constructor(){
+        class Papagaio extends Passaro {
+            constructor() {
                 super()
                 this.sabeFalar = true
             }
 
-            falar(){
+            falar() {
                 console.log('falar')
             }
         }
@@ -65,7 +67,7 @@
 
         cachorro.dormir()
         passaro.dormir()
-        
+
         papagaio.falar()
         papagaio.dormir()
         papagaio.voar()
