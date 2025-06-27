@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+    <script>
+
+       let assinatura = {
+        idCliente: 1000,
+        descricao: 'Acesso a internet',
+        status(){
+            console.log('Ativo')
+        }
+       }
+       console.log(assinatura.descricao)
+
+
+       //Associa apenas o caminho para o mesmo objeto, e não duplica o valor e separa cada variável
+       let y = assinatura
+       console.log(y.descricao)
+       y.idCliente = 12
+       console.log(y.idCliente)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
