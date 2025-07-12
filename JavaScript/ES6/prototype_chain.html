@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <script type="text/babel">
+
+        //Object.prototype
+
+        let animal = { a1: 'a'}
+        let vertebrado = { __proto__: animal, a2: 'b'}
+        let ave = { __proto__: vertebrado, a3: 'c'}
+
+        console.log(ave.a2)
+        console.log(ave.a1)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
