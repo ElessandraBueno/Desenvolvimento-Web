@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <script type="text/babel">
+
+        //destructuring
+
+        let frutas = ['Abacaxi', 'Uva', 'Pera', 'Mamão']
+
+        // let a = frutas[0]
+        // let b = frutas[1]
+        // let c = frutas[2]
+
+        // let [a, b, , c] = frutas // pula um índice
+
+        let [a, b = 'Abacate', c, d, e = 'Banana'] = frutas //define um valor default caso nao exista no parametro
+
+        console.log(a, b, c, d, e)
+
+        let coisas = [['Abacaxi', 'Uva', 'Pera', 'Mamão'], ['José', 'Maria']]
+        let [ ,[, nome]] = coisas
+        console.log(nome)
+
+        let [[, , fruta]] = coisas
+        console.log(fruta)
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
