@@ -9,8 +9,8 @@ class Despesa {
     }
 
     validarDados() {
-        for( let i in this){
-            if(this[i] == undefined || this[i] == '' || this[i] == null){
+        for (let i in this) {
+            if (this[i] == undefined || this[i] == '' || this[i] == null) {
                 return false
             }
         }
@@ -22,21 +22,43 @@ class Bd {
     constructor() {
         let id = localStorage.getItem('id')
 
-        if(id === null) {
+        if (id === null) {
             localStorage.setItem('id', 0)
-        } 
+        }
     }
 
     getProximoId() {
         let proximoId = localStorage.getItem('id')
         return parseInt(proximoId) + 1
-    } 
-    
+    }
+
     gravar(d) {
-        
+
         let id = this.getProximoId()
         localStorage.setItem(id, JSON.stringify(d))
         localStorage.setItem('id', id)
+    }
+
+    recuperarTodosRegistros() {
+        //array despesas
+        let despesas = Array()
+
+        let id = localStorage.getItem('id')
+
+        //recuperar todas as despesas cadatsradas em localStorage
+        for (let i = 1; i <= id; i++) {
+
+            //recuperar a despesa
+            let despesa = JSON.parse(localStorage.getItem(i))
+            despesas.push(despesa)
+
+            //verificar se podem haver índices que foram removidos/pulados
+            if(despesa ===  null){
+                continue
+            }
+        }
+
+        console.log(despesas)
     }
 }
 
@@ -52,26 +74,26 @@ function cadastrarDespesa() {
     let valor = document.getElementById('valor')
 
     let despesa = new Despesa(
-        ano.value, 
-        mes.value, 
-        dia.value, 
-        tipo.value, 
-        descricao.value, 
+        ano.value,
+        mes.value,
+        dia.value,
+        tipo.value,
+        descricao.value,
         valor.value)
 
-    if(despesa.validarDados()){
+    if (despesa.validarDados()) {
         //bd.gravar(despesa)
-        
+
         document.getElementById('modal-titulo').innerHTML = 'Registro inserido com sucesso!'
         document.getElementById('modal-titulo-div').className = 'modal-header text-sucess'
         document.getElementById('modal-conteudo').innerHTML = 'Despesa cadastrada com sucesso!'
         document.getElementById('modal-btn').innerHTML = 'Voltar'
         document.getElementById('modal-btn').className = 'btn btn-success'
-        
+
         //dialog de sucesso
         $('#registroDespesa').modal('show')
     } else {
-        
+
         document.getElementById('modal-titulo').innerHTML = 'Erro na inclusão do registro.'
         document.getElementById('modal-titulo-div').className = 'modal-header text-danger'
         document.getElementById('modal-conteudo').innerHTML = 'Verifique se todos os campos foram preenchidos corretamente.'
@@ -81,7 +103,12 @@ function cadastrarDespesa() {
         //dialog de erro
         $('#registroDespesa').modal('show')
     }
-    
+
+}
+
+function carregaListaDespesas() {
+    bd.recuperarTodosRegistros()
+
 }
 
 
