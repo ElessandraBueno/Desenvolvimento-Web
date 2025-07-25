@@ -50,12 +50,14 @@ class Bd {
 
             //recuperar a despesa
             let despesa = JSON.parse(localStorage.getItem(i))
-            despesas.push(despesa)
-
+            
             //verificar se podem haver índices que foram removidos/pulados
             if (despesa === null) {
                 continue
             }
+
+            despesa.id = i
+            despesas.push(despesa)
         }
 
         return despesas
@@ -97,8 +99,12 @@ class Bd {
             despesasFiltradas = despesasFiltradas.filter(d => d.valor == despesa.valor)
         }
 
-        console.log(despesasFiltradas)
+        return despesasFiltradas
         
+    }
+
+    remover(id){
+        localStorage.removeItem(id)
     }
 }
 
@@ -153,13 +159,15 @@ function cadastrarDespesa() {
 
 }
 
-function carregaListaDespesas() {
+function carregaListaDespesas(despesas = Array(), filtro = false) {
 
-    let despesas = Array()
-    despesas = bd.recuperarTodosRegistros()
+    if(despesas.length == 0 && filtro == false){
+        despesas = bd.recuperarTodosRegistros()
+    }
 
     //selecionando o elemento tbody da tabela
     let tabelaDespesas = document.getElementById('tabelaListaDespesas')
+    tabelaDespesas.innerHTML = ''
 
     //percorrer o array, listando cada despesa de forma dinamica
     despesas.forEach(function (d) {
@@ -168,7 +176,6 @@ function carregaListaDespesas() {
         let linha = tabelaDespesas.insertRow()
         //criar as colunas(td)
         linha.insertCell(0).innerHTML = `${d.dia}/${d.mes}/${d.ano}`
-        
 
         //ajustar o tipo
         switch (d.tipo) {
@@ -186,6 +193,20 @@ function carregaListaDespesas() {
         linha.insertCell(1).innerHTML = d.tipo
         linha.insertCell(2).innerHTML = d.descricao
         linha.insertCell(3).innerHTML = d.valor
+
+        //botao de exclusão
+        let btn = document.createElement("button")
+        btn.className = 'btn btn-danger'
+        btn.innerHTML =  '<i class="fa-solid fa-x"></i>'
+        btn.id = 'id_despesa_' + d.id
+        btn.onclick = function(){
+            //remover a despesa
+            let id = this.id.replace('id_despesa_', '')
+            bd.remover(id)
+
+            window.location.reload()
+        }
+        linha.insertCell(4).append(btn)
     })
 }
 
@@ -199,8 +220,9 @@ function pesquisarDespesa(){
 
     let despesa = new Despesa(ano, mes, dia, tipo, descricao, valor)
 
-    bd.pesquisar(despesa)
+    let despesas = bd.pesquisar(despesa)
 
+    carregaListaDespesas(despesas, true)
 }
 
 
